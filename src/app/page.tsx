@@ -1,6 +1,48 @@
 export default function Home() {
   return (
     <main className="min-h-screen bg-neutral-900 text-neutral-100">
+      {/* Navigation Header */}
+      <header className="border-b border-neutral-800">
+        <nav className="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
+          <div className="flex items-center gap-2">
+            <div className="w-8 h-8 bg-blue-500 rounded-lg flex items-center justify-center">
+              <span className="text-white font-bold text-sm">AI</span>
+            </div>
+            <span className="font-semibold text-lg text-neutral-100">
+              DevPlatform
+            </span>
+          </div>
+          <div className="hidden md:flex items-center gap-8">
+            <a
+              href="#features"
+              className="text-neutral-400 hover:text-neutral-100 transition-colors"
+            >
+              Features
+            </a>
+            <a
+              href="#pricing"
+              className="text-neutral-400 hover:text-neutral-100 transition-colors"
+            >
+              Pricing
+            </a>
+            <a
+              href="#docs"
+              className="text-neutral-400 hover:text-neutral-100 transition-colors"
+            >
+              Docs
+            </a>
+          </div>
+          <div className="flex items-center gap-4">
+            <button className="text-neutral-400 hover:text-neutral-100 transition-colors">
+              Sign In
+            </button>
+            <button className="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-colors">
+              Get Started
+            </button>
+          </div>
+        </nav>
+      </header>
+
       {/* Hero Section */}
       <section className="max-w-5xl mx-auto px-6 pt-24 pb-16">
         <div className="text-center">
