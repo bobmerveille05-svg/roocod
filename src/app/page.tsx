@@ -118,6 +118,57 @@ export default function Home() {
           </li>
         </ul>
       </section>
+
+      {/* Footer */}
+      <footer className="border-t border-neutral-800 mt-20">
+        <div className="max-w-5xl mx-auto px-6 py-12">
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
+            <div className="flex items-center gap-2">
+              <div className="w-8 h-8 bg-blue-500 rounded-lg flex items-center justify-center">
+                <span className="text-white font-bold text-sm">AI</span>
+              </div>
+              <span className="font-semibold text-lg text-neutral-100">
+                DevPlatform
+              </span>
+            </div>
+            <div className="flex flex-wrap gap-6">
+              <a
+                href="#features"
+                className="text-neutral-400 hover:text-neutral-100 transition-colors"
+              >
+                Features
+              </a>
+              <a
+                href="#pricing"
+                className="text-neutral-400 hover:text-neutral-100 transition-colors"
+              >
+                Pricing
+              </a>
+              <a
+                href="#docs"
+                className="text-neutral-400 hover:text-neutral-100 transition-colors"
+              >
+                Docs
+              </a>
+              <a
+                href="#privacy"
+                className="text-neutral-400 hover:text-neutral-100 transition-colors"
+              >
+                Privacy
+              </a>
+              <a
+                href="#terms"
+                className="text-neutral-400 hover:text-neutral-100 transition-colors"
+              >
+                Terms
+              </a>
+            </div>
+          </div>
+          <div className="mt-8 pt-8 border-t border-neutral-800 text-center text-neutral-500 text-sm">
+            © 2026 DevPlatform. All rights reserved.
+          </div>
+        </div>
+      </footer>
     </main>
   );
 }
